@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Quem Somos{% endblock %}
+
+{% block content %}
+<main>
+  <div class="container mt-3">
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">Nossa missão</h3>
+          <p class="card-text">Unir tecnologia, estrutura moderna e acompanhamento profissional em um só lugar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">Nossos valores</h3>
+          <p class="card-text">Comprometimento com resultado, respeito ao ritmo de cada aluno e evolução constante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h2 class="mb-4">Perguntas frequentes</h2>
+
+  <div class="accordion" id="faqAccordion">
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="heading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+          Como funciona a matrícula?
+        </button>
+      </h3>
+      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Você pode se matricular diretamente na recepção ou pelo site. Não exigimos exame médico prévio, mas recomendamos avaliação física antes de iniciar.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          Preciso de experiência prévia?
+        </button>
+      </h3>
+      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Não. Temos acompanhamento profissional para iniciantes e treinos adaptados a qualquer nível.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          Quais os horários de funcionamento?
+        </button>
+      </h3>
+      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Funcionamos 24 horas, todos os dias da semana, com acesso por catraca.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <span class="badge bg-warning text-dark mb-2">Mais procurado - R$99,90</span>
+          <h3 class="card-title">Plano Família</h3>
+          <p class="card-text">Matricule toda a família com desconto progressivo e horários flexíveis para cada integrante.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">Estrutura completa</h3>
+          <p class="card-text">Equipamentos atualizados, área de musculação, cardio e espaço para aulas em grupo.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+{% endblock %}

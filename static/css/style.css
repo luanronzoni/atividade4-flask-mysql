@@ -1,0 +1,94 @@
+.logo-navbar {
+  width: 90px;      /* ajuste o valor pro tamanho que preferir */
+  height: auto;      /* mantém a proporção original da imagem, evita distorção */
+}
+
+header .navbar {
+  background-color: #1e1e1e !important;
+}
+
+body {
+  font-family: cursive;
+  background-color: #e8e8e8;
+}
+
+.carousel-item img {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 500px;
+  }
+}
+.card {
+  background-color: #1e1e1e;
+  border: none;
+}
+
+.card-title {
+  color: #f3cd37;
+}
+
+.card-text {
+  color: #e0e0e0;
+}
+
+.accordion-item {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.accordion-button {
+  background-color: #1e1e1e;
+  color: #f3cd37;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2a2a2a;
+  color: #f3cd37;
+  box-shadow: none;
+}
+.form-control:focus,
+.accordion-button:focus {
+  box-shadow: none;
+  outline: 2px solid #f3cd37; 
+  outline-offset: 2px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-body {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.footer-custom {
+  background-color: #1e1e1e;
+}
+
+footer a {
+  color: #f3cd37;
+}
+
+footer p{
+  color: #f3cd37;
+}
+
+form {
+  display: flex;
+  flex-direction: column; 
+  gap: 2%;                 
+}
+
+textarea {
+  height: 150px;
+}
+
+button{
+  margin: 2% 0 0 0 ;
+  width: 10%;
+}
+
