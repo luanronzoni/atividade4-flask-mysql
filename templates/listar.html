@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Listar{% endblock %}
+
+{% block content %}
+<main>
+<section class="container my-5">
+  {% if contatos %}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Mensagem</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for c in contatos %}
+      <tr>
+        <td>{{ c.id }}</td>
+        <td>{{ c.email }}</td>
+        <td>{{ c.mensagem }}</td>
+        <td>{{ c.criado_em }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="alert alert-info">Nenhum registro encontrado.</div>
+  {% endif %}
+</section>
+</main>
+{% endblock %}
